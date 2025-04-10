@@ -36,6 +36,9 @@ bootBuildImage {
     environment["BP_JVM_VERSION"] = "17.*"
     environment["BP_HEALTH_CHECKER_ENABLED"] = "true"
     buildpacks = ["urn:cnb:builder:paketo-buildpacks/java", "gcr.io/paketo-buildpacks/health-checker:1"]
+    docker {
+        host = "//./pipe/dockerDesktopLinuxEngine"
+    }
 }
 
 tasks.named('test') {
