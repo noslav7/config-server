@@ -17,7 +17,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/JavaOPs/config-repository
+          uri: https://github.com/noslav7/config-repository
           default-label: master
           timeout: 5
           clone-on-start: true
